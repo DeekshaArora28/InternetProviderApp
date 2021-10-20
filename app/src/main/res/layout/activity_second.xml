@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvClNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Number:"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvClNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="......."
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvClNumberLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvClNumberLabel"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvProviderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Provider"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvClNumber"
+        app:layout_constraintLeft_toRightOf="@+id/tvClNumber"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvProvider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="....."
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvProviderLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvProviderLabel"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvNbmonthsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nb. months"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvProvider"
+        app:layout_constraintLeft_toRightOf="@+id/tvProvider"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvNbmonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...."
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvNbmonthsLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvNbmonthsLabel"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSubTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubTotoal:"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvNbmonths"
+        app:layout_constraintLeft_toRightOf="@+id/tvNbmonths"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvSubTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="....."
+
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvSubTotalLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvSubTotalLabel"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        app:layout_constraintTop_toBottomOf="@+id/tvClNumberLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".........."
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvTotalLabel"
+        app:layout_constraintLeft_toRightOf="@+id/tvTotalLabel"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
